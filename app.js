@@ -39,7 +39,7 @@ function order(food, drink, dessert){
   //Print the length of the array named "order"
   console.log(order.length);
 
-  return "I would like to order a " + order[0] + " " + order[1] + ", and a " + order[2] + ".";
+  return "I would like to order a " + order[0] + " and a " + order[1] + ", and a " + order[2] + ".";
 }
 
 console.log(order("Burger", "root beer", "frosty"));
@@ -110,7 +110,7 @@ function moreArrayMethods(priorities){
 
   //Use the method sort() to sort your priorities
   priorities.sort();
-
+  console.log(priorities);
   //Use the method indexOf() to replace "Not Going to Class" to "Going to Class"
   var changeAtIndex = priorities.indexOf("Not Going to Class");
   priorities[changeAtIndex] = "Going to Class";
